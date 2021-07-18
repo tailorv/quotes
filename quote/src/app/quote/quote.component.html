@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+<p>{{quote.name}}</p><br>
+<p>{{quote.author}}</p><br>
+<p>{{quote.quoteText}}</p><br>
+    </div>
+
+    <p> Submitted {{quote.completeDate|timeLapse}} </p>
+
+
+    <div class="col-md-6">
+    <button style="float:left" (click)='up()' class="btn btn-warning btn-lg">Upvote {{upvote}} </button>
+    <button style="float:left" (click)='down()' class="btn btn-warning btn-lg">Downvote{{downvote}}</button>
+
+  </div>
+
+  </div>
+</div>
