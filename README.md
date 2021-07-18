@@ -3,7 +3,7 @@
 
 #### AUTHOR **{Maxwell Munene}**
 
-This is a simple application where users can create quotes and have those quotes voted on whether they are terrible or inspirational.As a user you will be able to input a quote and will also be able to upvote or downvote it. This project was generated with Angular CLI version 12.1.2.
+This is a simple application where users can create quotes and have those quotes voted on whether they are terrible or inspirational.As a user you will be able to input a quote and will also be able to upvote or to downvote it. This project was generated with Angular CLI version 12.1.2.
 
 
 
