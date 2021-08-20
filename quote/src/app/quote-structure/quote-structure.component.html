@@ -1,0 +1,21 @@
+
+<p>
+    <span>
+        {{numberOfVotes}}
+        <button (click)= "upVoteButtonClick()" class="upvote">👍</button>
+    </span>
+   
+    {{numberOfVotes}}
+
+    <button (click)= "downVoteButtonClick()" class="downvote">👎</button>
+
+    
+
+    
+<br>
+    submitted on {{quote.submitDate|date}}
+    <br>
+    published on {{quote.submitDate|date|publishDate}} days
+    <br>
+    <button (click)= 'quoteDelete(true)'>Delete Quote</button>
+</p>

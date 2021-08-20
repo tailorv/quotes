@@ -1,0 +1,35 @@
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:40px">GET INSPIRED</h1>
+        <h6>WELCOME TO QUOTIT</h6>
+
+      </div>
+
+      <div class="container-fluid">
+        <h5>INPIRATIONS</h5>
+        <div class="containe">
+          <div class="row">
+            <div class="col-md-6">
+              <div *ngFor='let quote of quotes; let i = index'>
+                <p ng-repeat="quote in quotes">
+                <p>{{quote.quote}}
+                  <br>
+                  ~{{quote.author}}
+                  <br>
+                  <button (click)='toggleDetails(i)'>comment</button>
+
+                  <app-quote-structure *ngIf='quote.showSubmitDate' [quote]='quote'
+                    (publishDate)='deleteQuote($event,i)'></app-quote-structure>
+                </p>
+              </div>
+              </div>
+              <div class="col-md-4">
+                <app-quote-input-form (addQuote)="addNewQuote($event)"></app-quote-input-form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+  
